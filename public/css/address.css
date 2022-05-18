@@ -1,0 +1,25 @@
+.address-form {
+    width: 20rem;
+    max-width: 90%;
+    margin: auto;
+}
+
+.address-item {
+    width: 20rem;
+    max-width: 95%;
+}
+
+.address__title {
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.address__price {
+    text-align: center;
+    color: #4d4d4d;
+    margin-bottom: 0.5rem;
+}
+
+.address__description {
+    text-align: center;
+}

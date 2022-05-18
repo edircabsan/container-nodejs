@@ -1,0 +1,24 @@
+
+<%- include('includes/head.ejs')%> 
+  <link rel="stylesheet" href="/css/address.css" />
+</head>
+
+<body>
+  <%- include('includes/navigation.ejs')%> 
+  <main>
+    <% if(addr.length > 0) {%>
+    <div class="grid">
+      <% for (let address of addr) {%>
+      <article class="card address-item">
+        <header class="card__header">
+          <h1 class="address__title" id="address-title"><%= address.ip %> </h1>
+        </header>
+      </article>
+      <% } %>
+    </div>
+    <%} else {%>
+    <h1>No Addresses Found.</h1>
+    <% } %>   
+  </main>
+
+  <%- include('includes/end.ejs')%> 
