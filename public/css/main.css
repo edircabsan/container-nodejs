@@ -52,10 +52,11 @@ main {
 }
 
 .grid {
-  display: flex;
+  display: block;
+  /*display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  align-items: stretch;
+  align-items: stretch;*/
 }
 
 .card {

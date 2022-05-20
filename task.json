@@ -1,0 +1,26 @@
+{
+    "family": "ip-tracker", 
+    "networkMode": "awsvpc", 
+    "executionRoleArn": "arn:aws:iam::941830345608:role/ecsTaskExecutionRole",
+    "containerDefinitions": [
+        {
+            "name": "ip-tracker-app", 
+            "image": "941830345608.dkr.ecr.us-east-2.amazonaws.com/ip-tracker:latest", 
+            "portMappings": [
+                {
+                    "containerPort": 3000, 
+                    "hostPort": 3000, 
+                    "protocol": "tcp"
+                }
+            ], 
+            "essential": true, 
+            "entryPoint": [], 
+            "command": []
+        }
+    ], 
+    "requiresCompatibilities": [
+        "FARGATE"
+    ], 
+    "cpu": "256", 
+    "memory": "512"
+}

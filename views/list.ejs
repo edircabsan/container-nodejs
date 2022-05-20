@@ -7,13 +7,16 @@
   <%- include('includes/navigation.ejs')%> 
   <main>
     <% if(addr.length > 0) {%>
-    <div class="grid">
+    <table>
+      <tr>
+        <th>Time</th>
+        <th>IP</th>
+      </tr>
       <% for (let address of addr) {%>
-      <article class="card address-item">
-        <header class="card__header">
-          <h1 class="address__title" id="address-title"><%= address.ip %> </h1>
-        </header>
-      </article>
+      <tr>
+          <td><%= address.dt %></td>
+          <td><%= address.ip %></td>
+      </tr>
       <% } %>
     </div>
     <%} else {%>

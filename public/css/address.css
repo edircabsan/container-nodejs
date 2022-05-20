@@ -23,3 +23,7 @@
 .address__description {
     text-align: center;
 }
+
+table {
+    font-family: monospace
+}

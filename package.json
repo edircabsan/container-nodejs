@@ -1,5 +1,5 @@
 {
-  "name": "nodejs-ip-logger",
+  "name": "nodejs-ip-crawler",
   "version": "1.0.0",
   "description": "App to register client IPs",
   "main": "app.js",
