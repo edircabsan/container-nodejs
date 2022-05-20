@@ -22,4 +22,4 @@ router.get("/add-address", (req, res, next) => {
 });
 
 exports.routes = router;
-exports.addresses = addresses;
+exports.addresses = addresses; 
