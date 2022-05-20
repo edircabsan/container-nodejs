@@ -1,11 +1,11 @@
 {
     "family": "ip-tracker", 
     "networkMode": "awsvpc", 
-    "executionRoleArn": "arn:aws:iam::941830345608:role/ecsTaskExecutionRole",
+    "executionRoleArn": "arn:aws:iam::[ACC_ID]:role/ecsTaskExecutionRole",
     "containerDefinitions": [
         {
             "name": "ip-tracker-app", 
-            "image": "941830345608.dkr.ecr.us-east-2.amazonaws.com/ip-tracker:latest", 
+            "image": "[ACC_ID].dkr.ecr.us-east-2.amazonaws.com/ip-tracker:latest", 
             "portMappings": [
                 {
                     "containerPort": 3000, 
