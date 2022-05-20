@@ -14,8 +14,8 @@ app.set('view engine', 'ejs');
 app.set("views", "views");
 
 app.use((req, res, next)=>{
-    res.set('Cache-Control', 'no-store')
-    next() 
+    res.set('Cache-Control', 'no-store'); 
+    next(); 
 });
 
 app.use(bodyParser.urlencoded({ extended: false }));
