@@ -21,5 +21,10 @@ router.get("/add-address", (req, res, next) => {
   res.redirect("/");
 });
 
+router.get("/clear", (req, res, next) => {
+  addresses.length = 0;
+    res.redirect("/");
+});
+
 exports.routes = router;
 exports.addresses = addresses; 
